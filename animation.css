@@ -1,0 +1,41 @@
+.container
+{
+    background-color: limegreen;
+    height: 500px;
+    width: 500px;
+    margin: 30px;
+    font-size: 0;
+}
+.item
+{
+    background-color: maroon;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border: 2px black solid;
+    margin: 30px;
+    animation: bounce 3s;
+    animation-iteration-count: infinite;
+}
+#box1
+{
+    animation-timing-function: ease-in;
+}
+#box2
+{
+    animation-timing-function: ease-out;
+}
+#box3
+{
+    animation-timing-function:linear;
+}
+
+@keyframes bounce
+{
+    0%{
+
+    }
+    50%{
+        transform: translateY(400px);
+    }
+}
